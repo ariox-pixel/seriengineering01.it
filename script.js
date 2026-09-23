@@ -1,1 +1,18 @@
-const btn=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');if(btn){btn.addEventListener('click',()=>{nav.style.display=nav.style.display==='flex'?'none':'flex';nav.style.position='absolute';nav.style.top='70px';nav.style.left='5%';nav.style.right='5%';nav.style.flexDirection='column';nav.style.padding='18px';nav.style.background='#fff';nav.style.border='1px solid #dbe5ef';nav.style.borderRadius='18px';nav.style.boxShadow='0 20px 50px rgba(0,0,0,.12)'})}document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=900)nav.style.display='none'}));
+const menu=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');
+menu?.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const form=document.getElementById('contactForm');
+form?.addEventListener('submit',e=>{
+  e.preventDefault();
+  const d=new FormData(form);
+  const subject=encodeURIComponent('Richiesta informazioni - SERI Engineering');
+  const body=encodeURIComponent(
+`Nome: ${d.get('nome')}
+Telefono: ${d.get('telefono')}
+Email: ${d.get('email')}
+Servizio: ${d.get('servizio')}
+
+Messaggio:
+${d.get('messaggio')}`);
+  window.location.href=`mailto:ari.p98@hotmail.com?subject=${subject}&body=${body}`;
+});

@@ -1,7 +1,5 @@
-# SERI Engineering - sito web
-Pacchetto pronto per GitHub Pages.
-Email: ari.p98@hotmail.com
-Telefono: +39 339 870 9379
-Sede: Via Mario De Sena, 152 - 80035 Nola (NA)
+# SERI Engineering – sito GitHub Pages
 
-Nota: le recensioni presenti nel template sono segnaposto e devono essere sostituite con testimonianze reali e autorizzate. Le immagini grafiche possono essere sostituite con foto reali dei lavori.
+Pacchetto statico pronto per GitHub Pages. Gli URL degli asset sono relativi per funzionare correttamente anche nel repository `/seriengineering01.it/`.
+
+Le recensioni sono segnaposto: sostituirle solo con testimonianze reali e autorizzate.

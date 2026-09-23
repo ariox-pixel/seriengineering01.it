@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://ariox-pixel.github.io/seriengineeringA1.it/sitemap.xml
+Sitemap: https://ariox-pixel.github.io/seriengineering01.it/sitemap.xml
